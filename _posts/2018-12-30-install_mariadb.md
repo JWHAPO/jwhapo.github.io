@@ -40,6 +40,10 @@ title: Install Maria DB On CentOS 7
 #3. MariaDB root 암호 및 기본 보안설정  
 *$ mysql_secure_installation*  
 
+### Database 접속   
+*$ mysql -u root -p*  
+
+
 
 #### 작성중...
 
