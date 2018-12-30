@@ -34,5 +34,12 @@ title: Install Maria DB On CentOS 7
 #1. MariaDB 서비스를 부팅할 때 자동실행 하도록 설정.  
 *$ systemctl enable mariadb*  
 
+#2. MariaDB 시작  
+*$ systemctl start mariadb  
+  
+#3. MariaDB root 암호 및 기본 보안설정  
+*$ mysql_secure_installation*  
+
+
 #### 작성중...
 
