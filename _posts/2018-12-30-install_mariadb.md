@@ -25,4 +25,4 @@ $ yum install MariaDB-server
 설치 중 질문이 몇개 나오고 대답(Y/N)을 입력하면 된다.
 
 결과 사진.
-<img width="500" height="700">https://github.com/JWHAPO/jwhapo.github.io/blob/master/images/install_mariadb/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7,%202018-12-30%2017-47-40.png?raw=true</img>
+![https://github.com/JWHAPO/jwhapo.github.io/blob/master/images/install_mariadb/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7,%202018-12-30%2017-47-40.png?raw=true
