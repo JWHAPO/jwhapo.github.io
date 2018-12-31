@@ -20,24 +20,24 @@ title: Install Maria DB On CentOS 7
 
 
 ### install Maria DB
-#1. 설치  
+#####1. 설치  
 *$ yum install MariaDB-server*  
 설치 중 질문이 몇개 나오고 대답(Y/N)을 입력하면 된다.  
 
-#2. 설치확인  
+#####2. 설치확인  
 *$ rpm -qa | grep MariaDB*  
 
 ![image](https://github.com/JWHAPO/jwhapo.github.io/blob/master/images/install_mariadb/sc2.png?raw=true)
 
 ### Database  시작  
 
-#1. MariaDB 서비스를 부팅할 때 자동실행 하도록 설정.  
+#####1. MariaDB 서비스를 부팅할 때 자동실행 하도록 설정.  
 *$ systemctl enable mariadb*  
 
-#2. MariaDB 시작  
+#####2. MariaDB 시작  
 *$ systemctl start mariadb*  
   
-#3. MariaDB root 암호 및 기본 보안설정  
+#####3. MariaDB root 암호 및 기본 보안설정  
 *$ mysql_secure_installation*  
 
 ### Database 접속   
@@ -55,31 +55,31 @@ title: Install Maria DB On CentOS 7
 *firewall-cmd --reload*   
 
 ### Maria DB 계정 생성  
-# root 접속  
+##### root 접속  
 *$ mysql -u root -p* ( 패스워드 입력  )  
   
-# database 목록 확인  
+##### database 목록 확인  
 *Maria DB> SHOW DATABASES';*  
 
-# 사용할 database 선택  
+##### 사용할 database 선택  
 *Maria DB> USE mysql;*  (선택하고자 하는 database가 없다면 *CREATE DATABASE DB명;*)  
 
-# 선택한 database에 user 확인  
+##### 선택한 database에 user 확인  
 *Maria DB> SELECT host,user,password from user;*  
 
-# User 생성 (mysql 보안상 외부접속을 허용하지 않음, 계정 생성 시 특정 IP 혹은 %를 지정하여 외부접속을 허용한다.)  
+##### User 생성 (mysql 보안상 외부접속을 허용하지 않음, 계정 생성 시 특정 IP 혹은 %를 지정하여 외부접속을 허용한다.)  
 *Maria DB> CREATE USER 'ID'@'IP or %' identified by 'PASSWORD';*  
 
-# 권한 주기  
+##### 권한 주기  
 *Maria DB> GRANT ALL PRIVILEGES ON DB명.테이블명(*가능) to 'USER ID'@'IP or %';*  
 
-# 권한 확인  
+##### 권한 확인  
 *Maria DB> SHOW GRANTS FOR 'USER ID'@'IP or %';*  
 
-# User 삭제  
+##### User 삭제  
 *Maria DB> DROP USER 'USER ID'@'IP or %';*  
 
-# 권한 삭제  
+##### 권한 삭제  
 *Maria DB> REVOKE ALL ON DB명.테이블명(* 가능) FROM 'USER ID'@'IP or %';* 
 
 
