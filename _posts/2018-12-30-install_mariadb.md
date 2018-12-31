@@ -71,7 +71,7 @@ title: Install Maria DB On CentOS 7
 *Maria DB> CREATE USER 'ID'@'IP or %' identified by 'PASSWORD';*  
 
 #### 권한 주기  
-*Maria DB> GRANT ALL PRIVILEGES ON DB명.테이블명(*가능) to 'USER ID'@'IP or %';*  
+*Maria DB> GRANT ALL PRIVILEGES ON DB명.테이블명(\*가능) to 'USER ID'@'IP or %';*  
 
 #### 권한 확인  
 *Maria DB> SHOW GRANTS FOR 'USER ID'@'IP or %';*  
