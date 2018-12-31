@@ -80,7 +80,7 @@ title: Install Maria DB On CentOS 7
 *Maria DB> DROP USER 'USER ID'@'IP or %';*  
 
 #### 권한 삭제  
-*Maria DB> REVOKE ALL ON DB명.테이블명(* 가능) FROM 'USER ID'@'IP or %';* 
+*Maria DB> REVOKE ALL ON DB명.테이블명(\* 가능) FROM 'USER ID'@'IP or %';* 
 
 
 
