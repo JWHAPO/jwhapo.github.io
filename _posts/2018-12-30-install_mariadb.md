@@ -43,7 +43,44 @@ title: Install Maria DB On CentOS 7
 ### Database 접속   
 *$ mysql -u root -p*  
 
+### Port 변경방법
+*$ vi /etc/my.cnf.d/server.cnf*  
+*$ systemctl restart mariadb* (변경 안되면... 재부팅...)  
+
+### Port 확인방법  
+*Maria DB> SHOW GLOBAL VARIABLES LIKE 'PORT';* 
+
+### 설정한 PORT 방화벽 OPEN 방법  
+*firewall-cmd --permanent --add-port=3456/tcp*  
+*firewall-cmd --reload*   
+
+### Maria DB 계정 생성  
+# root 접속  
+*$ mysql -u root -p* ( 패스워드 입력  )  
+  
+# database 목록 확인  
+*Maria DB> SHOW DATABASES';*  
+
+# 사용할 database 선택  
+*Maria DB> USE mysql;*  (선택하고자 하는 database가 없다면 *CREATE DATABASE DB명;*)  
+
+# 선택한 database에 user 확인  
+*Maria DB> SELECT host,user,password from user;*  
+
+# User 생성 (mysql 보안상 외부접속을 허용하지 않음, 계정 생성 시 특정 IP 혹은 %를 지정하여 외부접속을 허용한다.)  
+*Maria DB> CREATE USER 'ID'@'IP or %' identified by 'PASSWORD';*  
+
+# 권한 주기  
+*Maria DB> GRANT ALL PRIVILEGES ON DB명.테이블명(*가능) to 'USER ID'@'IP or %';*  
+
+# 권한 확인  
+*Maria DB> SHOW GRANTS FOR 'USER ID'@'IP or %';*  
+
+# User 삭제  
+*Maria DB> DROP USER 'USER ID'@'IP or %';*  
+
+# 권한 삭제  
+*Maria DB> REVOKE ALL ON DB명.테이블명(* 가능) FROM 'USER ID'@'IP or %';* 
 
 
-#### 작성중...
 
