@@ -35,7 +35,7 @@ title: Install Maria DB On CentOS 7
 *$ systemctl enable mariadb*  
 
 #2. MariaDB 시작  
-*$ systemctl start mariadb  
+*$ systemctl start mariadb*  
   
 #3. MariaDB root 암호 및 기본 보안설정  
 *$ mysql_secure_installation*  
