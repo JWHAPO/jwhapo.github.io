@@ -51,8 +51,8 @@ title: Install Maria DB On CentOS 7
 *Maria DB> SHOW GLOBAL VARIABLES LIKE 'PORT';* 
 
 ### 설정한 PORT 방화벽 OPEN 방법  
-*firewall-cmd --permanent --add-port=3456/tcp*  
-*firewall-cmd --reload*   
+*firewall-cmd \--permanent \--add-port=3456/tcp*  
+*firewall-cmd \--reload*   
 
 ### Maria DB 계정 생성  
 #### root 접속  
