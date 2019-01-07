@@ -12,3 +12,33 @@ title: Spring boot Test MockMvc
 없다면 추가!.  
 *testImplementation('org.springframework.boot:spring-boot-starter-test')*  
 
+### 테스트 코드
+
+------------
+@RunWith(SpringRunner.class)
+@WebMvcTest(CarController.class)
+@AutoConfigureRestDocs(outputDir = "target/snippets")
+public class CarControllerTest {
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @MockBean
+    CarService carService;
+
+
+    @Test
+    public void findAllTest() throws Exception{
+
+        Car car = new Car(1L,1L,"newCar1", 2210L,"kg","KIA","1");
+
+        List<Car> allCars = Collections.singletonList(car);
+        given(carService.findAll()).willReturn(allCars);
+
+        mockMvc.perform(get("/cars").contentType(MediaType.APPLICATION_JSON)).andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(1)))
+                .andExpect(jsonPath("$[0].no",is(car.getNo().intValue())))
+                .andDo(document("cars/findAll"));
+    }
+}
+------------------
