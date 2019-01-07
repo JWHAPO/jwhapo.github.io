@@ -14,7 +14,7 @@ title: Spring boot Test MockMvc
 
 ### 테스트 코드
 
-------------
+~~~   
 @RunWith(SpringRunner.class)
 @WebMvcTest(CarController.class)
 @AutoConfigureRestDocs(outputDir = "target/snippets")
@@ -41,4 +41,4 @@ public class CarControllerTest {
                 .andDo(document("cars/findAll"));
     }
 }
-------------------
+~~~   
