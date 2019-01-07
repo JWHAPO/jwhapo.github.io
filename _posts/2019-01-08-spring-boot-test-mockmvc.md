@@ -17,7 +17,6 @@ title: Spring boot Test MockMvc
 ~~~   
 @RunWith(SpringRunner.class)
 @WebMvcTest(CarController.class)
-@AutoConfigureRestDocs(outputDir = "target/snippets")
 public class CarControllerTest {
 
     @Autowired
@@ -30,15 +29,15 @@ public class CarControllerTest {
     @Test
     public void findAllTest() throws Exception{
 
-        Car car = new Car(1L,1L,"newCar1", 2210L,"kg","KIA","1");
+        Car car = new Car(1L,1L,"newCar1", 2210L,"kg","KIA","1"); // 테스트할 Car 객체 생성
 
         List<Car> allCars = Collections.singletonList(car);
         given(carService.findAll()).willReturn(allCars);
 
-        mockMvc.perform(get("/cars").contentType(MediaType.APPLICATION_JSON)).andExpect(status().isOk())
-                .andExpect(jsonPath("$", hasSize(1)))
-                .andExpect(jsonPath("$[0].no",is(car.getNo().intValue())))
-                .andDo(document("cars/findAll"));
+        mockMvc.perform(get("/cars").contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())  //응답 상태코드가 200 (HttpStatus.OK)이 아니면 에러!
+                .andExpect(jsonPath("$", hasSize(1))) //json 결과 사이즈가 1개가 아니면 에러!!( 위에 Car 객체에 1개만 넣었음..)
+                .andExpect(jsonPath("$[0].no",is(car.getNo().intValue())));
     }
 }
 ~~~   
