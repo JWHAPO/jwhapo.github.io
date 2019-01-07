@@ -41,11 +41,11 @@ public class CarControllerTest {
                 .andExpect(jsonPath("$[0].no",is(car.getNo().intValue())));
     }
 }
-~~~   
+```    
 
 ### 테스트 코드 #2
 
-~~~   
+```java   
 @Test
     public void findByEmailAndPasswordTest() throws Exception{
         User user = new User(1L,"kjw@test.com","123","Mr.KKK","Seoul","2");
@@ -57,4 +57,4 @@ public class CarControllerTest {
 
     }
 
-~~~  
+```   
