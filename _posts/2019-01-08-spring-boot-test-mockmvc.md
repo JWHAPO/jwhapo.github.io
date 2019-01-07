@@ -14,7 +14,7 @@ gradle입니다.
 
 *testImplementation('org.springframework.boot:spring-boot-starter-test')*  
 
-### 테스트 코드 #1 
+### 테스트 코드 #1  
 
 ~~~   
 @RunWith(SpringRunner.class)
@@ -43,7 +43,7 @@ public class CarControllerTest {
 }
 ~~~   
 
-### 테스트 코드 #2  
+### 테스트 코드 #2 
 
 ~~~   
 @Test
