@@ -16,7 +16,7 @@ gradle입니다.
 
 ### 테스트 코드 #1  
 
-~~~   
+```java  
 @RunWith(SpringRunner.class)
 @WebMvcTest(CarController.class)
 public class CarControllerTest {
