@@ -10,6 +10,8 @@ title: Spring boot Test MockMvc
 ### 의존성 추가  
 보통 spring boot로 프로젝트를 생성하면 spring-boot-starter-test가 기본적으로 추가되어있을 것이다.  
 없다면 추가!.  
+gradle입니다.  
+
 *testImplementation('org.springframework.boot:spring-boot-starter-test')*  
 
 ### 테스트 코드 #1 
@@ -41,7 +43,7 @@ public class CarControllerTest {
 }
 ~~~   
 
-### 테스트 코드 #1 
+### 테스트 코드 #2  
 
 ~~~   
 @Test
