@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spring boot Test MockMvc 
+title: Spring boot Test MockMvc
 ---
 
 ### MockMvc 란?  
@@ -12,7 +12,7 @@ title: Spring boot Test MockMvc
 없다면 추가!.  
 gradle입니다.  
 
-*testImplementation('org.springframework.boot:spring-boot-starter-test')*  
+*testImplementation('org.springframework.boot:spring-boot-starter-test')*   
 
 ### 테스트 코드 #1  
 
@@ -43,7 +43,7 @@ public class CarControllerTest {
 }
 ~~~   
 
-### 테스트 코드 #2 
+### 테스트 코드 #2
 
 ~~~   
 @Test
