@@ -40,3 +40,19 @@ public class CarControllerTest {
     }
 }
 ~~~   
+
+### 테스트 코드 #1 
+
+~~~   
+@Test
+    public void findByEmailAndPasswordTest() throws Exception{
+        User user = new User(1L,"kjw@test.com","123","Mr.KKK","Seoul","2");
+        given(userService.findByEmailAndPassword("kjw@naver.com","123")).willReturn(user);
+
+        mockMvc.perform(get("/users/kjw@test.com/123").contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("name",is(user.getName())));
+
+    }
+
+~~~  
