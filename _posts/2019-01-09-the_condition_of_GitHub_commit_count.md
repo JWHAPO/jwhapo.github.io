@@ -28,14 +28,15 @@ title: GitHub commit 잔디가 심어지는 조건..
  Git repository에 가서 아래와 같이 사용자 정보를 입력한다.  
  git config &#45;&#45;global user.name "enter your name"  
  git config &#45;&#45;global user.email youremail@email.com  
- ( &#45;&#45;global 은 자신의 시스템 전체 유저정보를 설정하는 키워드다. repository별로 하려면 &#45;&#45;global을 뺀 후 입력!)  
-  
+ &#40; &#45;&#45;global 은 자신의 시스템 전체 유저정보를 설정하는 키워드다. repository별로 하려면 &#45;&#45;global을 뺀 후 입력!&#41;  
+   
  결국 이 문제는.. Git 설치후 해야될 설정들을 안한 나의 잘못...ㅠㅠ  
  새로 잔디심기를 시작해야겠다..  
 
- ##GitHub 잔디심기란?  
+ ## GitHub 잔디심기란?  
  GitHub 자신의 페이지에 들어가보면 아래의 사진과 같이 자신이 Contribution한 수를 일자별로 표시해준다.  
  Contribution한 수에 따라 회색(0),연한 초록색부터 짙은 초록색까지 5가지 색으로 표시된다.  
  이 표를 초록색으로 채우는 행위를 **잔디심기**라 칭하는 듯하다.   
+   
  
- 
+  
