@@ -13,7 +13,7 @@ title: GitHub commit 잔디가 심어지는 조건..
  ~~내 정수리마냥~~ 듬성듬성했던 잔디밭이 채워지는 것을 보면서 코딩에 박차를 가할 때 쯤  
  어제 내가 분명히 심었던! 잔디가 보이지 않는다..  
    
-     
+ ![count of my contributions](https://github.com/JWHAPO/jwhapo.github.io/blob/master/images/the_condition_of_GitHub_commit_count/jandi.png?raw=true)
      
  ## 원인..  
  Git은 커밋을 할 때 설정된 사용자 정보를 가지고 하는데, 이 부분이 없으면 Contribution 카운트를 하지 않는다..  
