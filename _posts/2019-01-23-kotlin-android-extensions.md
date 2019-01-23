@@ -1,7 +1,7 @@
 
 ---
 layout: post   
-title: Kotlin-Android-Extensions findViewById 안쓰기.   
+title: Kotlin-Android-Extensions 부제:findViewById 안쓰기.   
 ---
 
 ## View Binding   
