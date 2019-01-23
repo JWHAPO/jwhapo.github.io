@@ -7,7 +7,7 @@ title: Kotlin-Android-Extensions findViewById 안쓰기.
 ## View Binding   
 
 ### 기존   
-```kotlin
+~~~
 class TestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,10 +17,10 @@ class TestActivity : AppCompatActivity() {
         button01.setText(R.string.app_name)
     }
 }
-```
+~~~
 
 ### extention 사용 후   
-```kotlin
+~~~
 class TestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +29,7 @@ class TestActivity : AppCompatActivity() {
         button01.setText(R.string.app_name)
     }
 }
-```
+~~~
 
 ## 사용 방법   
 ### build.gradle 에 추가   
