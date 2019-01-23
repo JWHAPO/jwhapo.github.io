@@ -35,5 +35,5 @@ class TestActivity : AppCompatActivity() {
 #build.gradle 에 추가   
 > apply plugin: 'kotlin-android-extensions'   
 
-#import   
+# import하기   
 >import kotlinx.android.synthetic.main.splash_layout.* (splash_layout:layout명)    
