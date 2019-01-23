@@ -1,12 +1,12 @@
 
 ---
-layout: post
-title: Kotlin-Android-Extensions (findViewById 안쓰기.)
+layout: post   
+title: Kotlin-Android-Extensions findViewById 안쓰기.   
 ---
 
-### View Binding   
+## View Binding   
 
-# 기존   
+### 기존   
 ```kotlin
 class TestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,8 +19,8 @@ class TestActivity : AppCompatActivity() {
 }
 ```
 
-# extention 사용 후   
-```Kotlin
+### extention 사용 후   
+```kotlin
 class TestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,8 +32,8 @@ class TestActivity : AppCompatActivity() {
 ```
 
 ## 사용 방법   
-#build.gradle 에 추가   
+### build.gradle 에 추가   
 > apply plugin: 'kotlin-android-extensions'   
 
-# import하기   
+### import하기   
 >import kotlinx.android.synthetic.main.splash_layout.* (splash_layout:layout명)    
