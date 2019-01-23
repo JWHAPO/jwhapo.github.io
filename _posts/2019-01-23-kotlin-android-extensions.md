@@ -8,7 +8,8 @@ title: Kotlin-Android-Extensions findViewById 안쓰기.
 
 ### 기존   
 
-```class TestActivity : AppCompatActivity() {
+```java
+class TestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash_layout)
@@ -16,18 +17,21 @@ title: Kotlin-Android-Extensions findViewById 안쓰기.
         val button01 = findViewById<Button>(R.id.button01)
         button01.setText(R.string.app_name)
     }
-}```
+}
+```
 
 ### extention 사용 후   
 
-```class TestActivity : AppCompatActivity() {
+```java
+class TestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash_layout)
 
         button01.setText(R.string.app_name)
     }
-}```
+}
+```
 
 
 ## 사용 방법   
