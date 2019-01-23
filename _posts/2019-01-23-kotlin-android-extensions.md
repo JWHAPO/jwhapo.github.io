@@ -5,6 +5,7 @@ title: Kotlin-Android-Extensions findViewById 안쓰기.
 ---
 
 ## View Binding   
+[kotlinlang.org 링크](https://kotlinlang.org/docs/tutorials/android-plugin.html)
 
 ### 기존   
 
