@@ -4,7 +4,7 @@ title: How to make Splash screen of Flutter.
 ---
 
 ## simple Splash Screen ## 
-``` 
+```dart 
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();
@@ -54,7 +54,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
 
 ## simple Main Screen ## 
-``` 
+```dart 
 
 import 'splash_screen.dart';
 import 'package:flutter/material.dart';
