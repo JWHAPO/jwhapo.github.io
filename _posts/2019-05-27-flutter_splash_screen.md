@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    //Change screen to main 
+    //Change screen to main after 2minutes
     Timer(Duration(seconds: 2), () => Navigator.pushReplacementNamed(context, '/main'));
   }
 
