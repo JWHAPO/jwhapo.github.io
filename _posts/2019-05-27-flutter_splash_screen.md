@@ -3,7 +3,7 @@ layout: post
 title: How to make Splash screen of Flutter.
 ---
 
-# SplashScreen 이 처음 실행되고 2초 뒤 Main으로 화면을 전환.
+### SplashScreen 이 처음 실행되고 2초 뒤 Main으로 화면을 전환.
 
 # simple Splash Screen
 
