@@ -1,6 +1,6 @@
 ---
 layout: post   
-title: How to make splash screen.   
+title: How to make Splash screen of Flutter.   
 ---
 
 ## simple Splash Screen ## 
