@@ -1,15 +1,15 @@
-
 ---
-layout: post   
-title: Kotlin Android Extensions 중 findViewById 안쓰기.   
+layout: post
+title: Kotlin Android Extensions 중 findViewById 안쓰기.
 ---
 
-## View Binding   
+# View Binding
+
 [kotlinlang.org 링크](https://kotlinlang.org/docs/tutorials/android-plugin.html)
 
-### 기존   
+## 기존
 
-```java
+```kotlin
 class TestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,9 +21,9 @@ class TestActivity : AppCompatActivity() {
 }
 ```
 
-### extention 사용 후   
+## extention 사용 후
 
-```java
+```kotlin
 class TestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,12 +34,14 @@ class TestActivity : AppCompatActivity() {
 }
 ```
 
+# 사용 방법
 
-## 사용 방법   
-### build.gradle 에 추가   
-> apply plugin: 'kotlin-android-extensions'   
+## build.gradle 에 추가
 
-* Android Studio에서 프로젝트 생성 시 kotlin extention 사용 체크했으면 이미 추가되어 있을 것입니다.*    
+> apply plugin: 'kotlin-android-extensions'
 
-### import하기   
->import kotlinx.android.synthetic.main.splash_layout.* (splash_layout:layout명)    
+- Android Studio에서 프로젝트 생성 시 kotlin extention 사용 체크했으면 이미 추가되어 있을 것입니다.*
+
+## import하기
+
+> import kotlinx.android.synthetic.main.splash_layout.* (splash_layout:layout명)
