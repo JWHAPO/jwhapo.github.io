@@ -55,6 +55,10 @@ class _SplashScreenState extends State<SplashScreen> {
 
 ## simple Main Screen ## 
 ``` 
+
+import 'splash_screen.dart';
+import 'package:flutter/material.dart';
+
 void main() => runApp(MyApp());
 
 var routes = <String, WidgetBuilder>{
